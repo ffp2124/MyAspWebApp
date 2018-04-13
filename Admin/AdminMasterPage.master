@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="Admin_AdminMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Styles/StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="wrapper">
+        <div class="menu">
+            <ul>
+                <li class = "navigation_first_item">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Admin/CustomerManagement.aspx">Customer</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Admin/ShoeManagement.aspx">Shoe</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Admin/OrderManagement.aspx">Order</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Admin/OrderItem.aspx">OrderItem</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Admin/SupplierManagement.aspx">Supplier</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Admin/Category.aspx">Category</asp:HyperLink></li>
+            </ul>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="content">
+            <asp:ContentPlaceHolder ID="contentPage" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear">
+        </div>
+        <div class = "footer">
+            <h2> @CopyRight Quantity Shoes All Right Reserved</h2>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

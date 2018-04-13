@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+        .style3
+        {
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="wrapper">
+        <div class="header">
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+            <asp:Timer ID="Timer1" runat="server" Interval="2000" ontick="Timer1_Tick">
+            </asp:Timer>
+            <asp:ImageButton ID="ImageButton1" Height = "200px" width = "308px" runat="server" 
+                ImageUrl="~/Images/logo1.png" onclick="ImageButton1_Click"  />
+            <asp:Image ID="Image1" Height = "200px" width = "600px" runat="server" 
+                    style="margin-left: 0px" />
+            </ContentTemplate>
+            </asp:UpdatePanel>
+            
+        </div>
+        <div class="menu">
+            <ul>
+                <li class = "navigation_first_item">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Registration.aspx">Registration</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Category.aspx">Catalogue</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Admin/AdminLogin.aspx">Admin</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/ShoppingCart.aspx">Shopping Cart</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/MyOrder.aspx">My Order</asp:HyperLink></li>
+                <li><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/ContactUs.aspx">Contact us</asp:HyperLink></li>
+            </ul>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="content">
+            <asp:ContentPlaceHolder ID="contentPage" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear">
+        </div>
+        <div class = "footer">
+
+            <table class="style1">
+                <tr>
+                    <td class="style2">
+                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Default.aspx" 
+                            CssClass="style3">Home</asp:HyperLink>
+&nbsp;|
+                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Registration.aspx" 
+                            CssClass="style3">Registration</asp:HyperLink>
+&nbsp;|
+                        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/ContactUs.aspx" 
+                            CssClass="style3">Contact us</asp:HyperLink>
+&nbsp;|
+                        <asp:HyperLink ID="HyperLink7" runat="server" 
+                            NavigateUrl="~/Admin/AdminLogin.aspx" CssClass="style3">Admin</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">
+                        @Copyright Quantity Shoes All Right Reserved</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

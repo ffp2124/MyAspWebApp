@@ -1,0 +1,11 @@
+C:\Users\asus\Desktop\新建文件夹 (3)\asp_assignment\WebHelper\bin\Debug\WebHelper.dll
+C:\Users\asus\Desktop\新建文件夹 (3)\asp_assignment\WebHelper\bin\Debug\WebHelper.pdb
+C:\Users\asus\Desktop\新建文件夹 (3)\asp_assignment\WebHelper\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\asus\Desktop\新建文件夹 (3)\asp_assignment\WebHelper\obj\Debug\WebHelper.dll
+C:\Users\asus\Desktop\新建文件夹 (3)\asp_assignment\WebHelper\obj\Debug\WebHelper.pdb
+G:\Unitec\2014 semester2\7420\assignment1\asp_assignment\WebHelper\bin\Debug\WebHelper.dll
+G:\Unitec\2014 semester2\7420\assignment1\asp_assignment\WebHelper\bin\Debug\WebHelper.pdb
+G:\Unitec\2014 semester2\7420\assignment1\asp_assignment\WebHelper\obj\Debug\WebHelper.csprojResolveAssemblyReference.cache
+G:\Unitec\2014 semester2\7420\assignment1\asp_assignment\WebHelper\obj\Debug\WebHelper.csproj.CoreCompileInputs.cache
+G:\Unitec\2014 semester2\7420\assignment1\asp_assignment\WebHelper\obj\Debug\WebHelper.dll
+G:\Unitec\2014 semester2\7420\assignment1\asp_assignment\WebHelper\obj\Debug\WebHelper.pdb
